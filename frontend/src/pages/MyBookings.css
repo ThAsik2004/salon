@@ -1,0 +1,100 @@
+.bookings-container {
+  min-height: 90vh;
+  padding: 50px;
+  background: #111;
+  color: white;
+}
+
+.booking-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  color: gold;
+  font-weight: bold;
+}
+
+/* ================= RESPONSIVE PREMIUM BOOKINGS ================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+  .bookings-container {
+    padding: 40px 30px;
+  }
+
+  .booking-card {
+    padding: 22px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .bookings-container {
+    padding: 30px 18px;
+  }
+
+  .bookings-container h2 {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+  }
+
+  .booking-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(160deg, #1b1b1b, #0f0f0f);
+
+    box-shadow:
+      0 16px 40px rgba(0,0,0,0.8),
+      inset 0 0 0 1px rgba(255,215,0,0.12);
+  }
+
+  .booking-card h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .booking-card p {
+    font-size: 16px;
+  }
+
+  .status {
+    align-self: flex-end;
+    padding: 6px 14px;
+    border-radius: 20px;
+
+    background: rgba(255,215,0,0.15);
+    box-shadow: 0 0 18px rgba(255,215,0,0.4);
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 420px) {
+
+  .bookings-container h2 {
+    font-size: 22px;
+  }
+
+  .booking-card h4 {
+    font-size: 16px;
+  }
+
+  .booking-card p {
+    font-size: 15px;
+  }
+}

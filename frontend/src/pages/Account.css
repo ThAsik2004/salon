@@ -1,0 +1,32 @@
+.account-container {
+  min-height: 90vh;
+  background: linear-gradient(to right, #000, #111);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-card {
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 18px;
+  width: 320px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 15px 40px rgba(0,0,0,.8);
+}
+
+.account-card h2 {
+  color: gold;
+  margin-bottom: 25px;
+}
+
+.account-card button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, gold, #ffb700);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
